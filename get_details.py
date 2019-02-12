@@ -38,9 +38,6 @@ for file in allFiles:
     file_stats.append(time.ctime(os.stat(file).st_atime))
     file_stats.append(os.stat(file).st_atime)
     all_file_details.append(file_stats)
-print(type(all_file_details))
-print(type(all_file_details[0]))
-print(all_file_details[0][0])
 
 sorted_file_list = sorted(all_file_details, key=getKey)
 
